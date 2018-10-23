@@ -81,6 +81,7 @@ def main():
     total = int(re.compile('(\d+)').search(total).group(1))
     print(total)
     for i in range(2,total + 1):
+        time.sleep(2)
         next_page(i)
     browser.close()
 
